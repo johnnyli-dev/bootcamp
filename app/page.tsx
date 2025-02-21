@@ -1,75 +1,54 @@
 import Image from "next/image";
 import Navbar from './components/Navbar';
+import { RedCircle, YellowHexagon, GreenStar, BlueSquare } from './components/Shapes';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <main className="flex flex-col gap-8 items-center sm:items-start">
-          <h1 className="text-4xl font-bold text-center sm:text-left">
-            Welcome to CodeCamp for High Schoolers!
-          </h1>
-          <p className="text-lg text-center sm:text-left">
-            Learn the fundamentals of programming with hands-on projects and guidance from experienced instructors.
-          </p>
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <li className="mb-2">
-              Sign up for our upcoming bootcamp sessions.
-            </li>
-            <li>Start your journey to becoming a coding pro!</li>
-          </ol>
-
-          <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <a
-              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-              href="https://codecamp.com/signup"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sign Up Now
-            </a>
-            <a
-              className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-              href="https://codecamp.com/learn-more"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn More
-            </a>
-          </div>
-        </main>
-      </div>
-      <footer className="border-t border-black/[.08] py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-6 flex-wrap items-center justify-center">
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://codecamp.com/about-us"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              About Us
-            </a>
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://codecamp.com/contact"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contact
-            </a>
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://codecamp.com/blog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blog
-            </a>
-          </div>
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Hero Section */}
+      <div className="relative h-screen flex items-center justify-center">
+        {/* SVG Shapes positioned relative to hero section */}
+        <div className="absolute inset-0">
+          <RedCircle />
+          <YellowHexagon />
+          <GreenStar />
+          <BlueSquare />
         </div>
-      </footer>
+
+        <Navbar />
+        
+        {/* Centered Content */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+          <main className="flex flex-col items-center text-center gap-8">
+            <h1 className="text-5xl font-bold">
+              Understand Your Education
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl">
+              Redefining education by making it open, clear, and hands-on. Our
+              immersive coding bootcamps empower you with real-world skills through
+              transparent, step-by-step instruction and collaborative learning.
+            </p>
+            <div className="flex gap-7 mt-[-5] whitespace-nowrap">
+              <a
+                href="#learn-more"
+                className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors w-32 text-center text-sm"
+              >
+                Learn More
+              </a>
+              <a
+                href="#join"
+                className="bg-blue-100 text-blue-800 px-6 py-2 rounded-full hover:bg-blue-200 transition-colors w-32 text-center text-sm"
+              >
+                Join Us!
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      {/* Additional content sections can go here */}
+      <div className="h-screen" />
+      <div className="h-screen" />
     </div>
   );
 }
