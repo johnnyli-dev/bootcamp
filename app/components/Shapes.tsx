@@ -1,16 +1,29 @@
+'use client';
+import { useScrollRotation } from '../hooks/useScrollRotation';
+
 export function RedCircle() {
+  const rotation = useScrollRotation();
   return (
-    <svg className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]" viewBox="0 0 256 256">
+    <svg 
+      className="absolute top-[-20%] left-[-15%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw] transition-transform duration-100"
+      viewBox="0 0 256 256"
+      style={{ transform: `rotate(${rotation}deg)` }}
+    >
       <circle cx="128" cy="128" r="128" fill="#EF4444" />
     </svg>
   );
 }
 
 export function YellowHexagon() {
+  const rotation = useScrollRotation();
   return (
-    <svg className="absolute top-10 right-10 translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw]" viewBox="0 0 256 256">
-      <path
-        d="M192 32L256 128L192 224H64L0 128L64 32H192Z"
+    <svg 
+      className="absolute top-[-20%] right-[-20%] translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] transition-transform duration-100"
+      viewBox="0 0 256 256"
+      style={{ transform: `rotate(${-rotation}deg)` }}
+    >
+      <polygon
+        points="128,8 231.92,68 231.92,188 128,248 24.08,188 24.08,68"
         fill="#FCD34D"
       />
     </svg>
@@ -18,10 +31,12 @@ export function YellowHexagon() {
 }
 
 export function GreenStar() {
+  const rotation = useScrollRotation();
   return (
     <svg
-      className="absolute top-[90%] left-0 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rotate-5"
+      className="absolute top-[70%] left-[-25%] -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] transition-transform duration-100"
       viewBox="0 0 256 256"
+      style={{ transform: `rotate(${rotation * 0.5}deg)` }}
     >
       <polygon 
         points="
@@ -51,10 +66,12 @@ export function GreenStar() {
 }
 
 export function BlueSquare() {
+  const rotation = useScrollRotation();
   return (
     <svg
-      className="absolute top-[90%] left-[110%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw] rotate-45"
+      className="absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] transition-transform h-[35vw] duration-100"
       viewBox="0 0 256 256"
+      style={{ transform: `rotate(${rotation * 1.5}deg)` }}
     >
       <rect x="0" y="0" width="256" height="256" fill="blue" />
     </svg>
