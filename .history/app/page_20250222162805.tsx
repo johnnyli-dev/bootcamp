@@ -115,7 +115,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			{/* Additional content sections (to allow for spinnage during development) */}
+			{/* Additional content sections */}
 			<div className="h-screen" />
 			<div className="h-screen" />
 		</div>

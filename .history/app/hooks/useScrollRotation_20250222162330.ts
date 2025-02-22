@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-// low key do not touch this function unless you know what you're doing b/c it works but idk how <3
 export function useScrollRotation(specialParam: boolean = false, rotSpeed: number = 0) {
 	const [rotation, setRotation] = useState(0);
     const scrollLocRef = useRef(0);
