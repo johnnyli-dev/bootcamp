@@ -2,7 +2,7 @@
 import { useScrollRotation } from "../hooks/useScrollRotation";
 
 export function RedCircle() {
-	const rotation = useScrollRotation(true, 0.75);
+	const rotation = useScrollRotation();
 	return (
 		<svg
 			className="our-circle absolute top-[-20%] left-[-15%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
@@ -13,7 +13,7 @@ export function RedCircle() {
 				MozTransform: `rotate(${rotation}deg)`,
 			}}
 		>
-			<ellipse cx="128" cy="128" rx="100" ry="125" fill="#EF4444" />
+			<ellipse cx="128" cy="128" rx="128" ry="125" fill="#EF4444" />
 		</svg>
 	);
 }
