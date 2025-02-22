@@ -30,7 +30,7 @@ export default function Home() {
 				<Navbar />
 
 				{/* Centered Content */}
-				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+				<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
 					<main className="flex flex-col items-center text-center gap-8">
 						<h1 className="text-5xl font-bold">
 							Understand Your Education
@@ -41,7 +41,7 @@ export default function Home() {
 							with real-world skills through transparent,
 							step-by-step instruction and collaborative learning.
 						</p>
-						<div className="flex gap-7 whitespace-nowrap">
+						<div className="flex gap-7 mt-[-5] whitespace-nowrap">
 							<a
 								href="#learn-more"
 								className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-colors w-32 text-center text-sm"
@@ -58,59 +58,57 @@ export default function Home() {
 					</main>
 
 					{/* About Us (Meet the Team) Section */}
-					<section className="py-16 flex flex-col items-center">
-						<h2 className="text-3xl font-bold mb-8">
-							Meet the Team
-						</h2>
+                    <section className="py-16 flex flex-col items-center">
+                        <h2 className="text-3xl font-bold mb-8">Meet the Team</h2>
 
-						<div className="flex flex-col md:flex-row gap-8 justify-center">
-							<PCard
-								name="Brock Brown"
-								subtitle="Computer Science at Northwestern University"
-								description="Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris nullam dignissim at arcu enim risus gravida. Feugiat vulputate primis urna libero sem netus ridiculus. Inceptos nec aptent interdum dis sollicitudin vulputate curae iaculis. Etiam habitasse ac natoque ad nisl dolor dui in."
-								profileImage="https://placehold.co/100.png"
+                        <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+                            <PCard
+                                name="Brock Brown"
+                                subtitle="Computer Science at Northwestern University"
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis cursus quam..."
+                                profileImage="https://placehold.co/100"
                                 socialLinks={[
                                     {
                                         icon: <GitHubLogoIcon width={20} height={20} />,
-                                        url: "https://github.com/bbrockbrown",
+                                        url: "https://github.com/brockbrown",
                                     },
                                     {
                                         icon: <LinkedInLogoIcon width={20} height={20} />,
-                                        url: "https://www.linkedin.com/in/brock-brown-058216221/",
+                                        url: "https://linkedin.com/in/brockbrown",
                                     },
                                     {
                                         icon: <InstagramLogoIcon width={20} height={20} />,
-                                        url: "https://www.instagram.com/bbrockbrown/",
+                                        url: "https://instagram.com/brockbrown",
                                     },
                                 ]}
-							/>
+                            />
 
-							<PCard
-								name="Jonathan Li"
-								subtitle="Applied Math • Computer Science at Berkeley"
-								description="Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris nullam dignissim at arcu enim risus gravida. Feugiat vulputate primis urna libero sem netus ridiculus. Inceptos nec aptent interdum dis sollicitudin vulputate curae iaculis. Etiam habitasse ac natoque ad nisl dolor dui in."
-								profileImage="https://placehold.co/100.png"
+                            <PCard
+                                name="Jonathan Li"
+                                subtitle="Applied Math • Computer Science at Berkeley"
+                                description="Sed in sem sit amet arcu semper faucibus nec eu sem. Sed sit amet eros vitae risus..."
+                                profileImage="https://placehold.co/400"
                                 socialLinks={[
                                     {
                                         icon: <GitHubLogoIcon width={20} height={20} />,
-                                        url: "https://github.com/johnnyli-dev",
+                                        url: "https://github.com/jonathanli",
                                     },
                                     {
                                         icon: <LinkedInLogoIcon width={20} height={20} />,
-                                        url: "https://www.linkedin.com/in/johnny-li-390841220/",
+                                        url: "https://linkedin.com/in/jonathanli",
                                     },
                                     {
                                         icon: <InstagramLogoIcon width={20} height={20} />,
-                                        url: "https://www.instagram.com/johnny.lii/",
+                                        url: "https://instagram.com/jonathanli",
                                     },
                                 ]}
-							/>
-						</div>
-					</section>
+                            />
+                        </div>
+                    </section>
 				</div>
 			</div>
 
-			{/* Additional content sections */}
+			{/* Additional content sections can go here */}
 			<div className="h-screen" />
 			<div className="h-screen" />
 		</div>

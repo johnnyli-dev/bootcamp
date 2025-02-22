@@ -63,11 +63,11 @@ export default function Home() {
 							Meet the Team
 						</h2>
 
-						<div className="flex flex-col md:flex-row gap-8 justify-center">
+						<div className="flex flex-col md:flex-row gap-8 items-center justify-center">
 							<PCard
 								name="Brock Brown"
 								subtitle="Computer Science at Northwestern University"
-								description="Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris nullam dignissim at arcu enim risus gravida. Feugiat vulputate primis urna libero sem netus ridiculus. Inceptos nec aptent interdum dis sollicitudin vulputate curae iaculis. Etiam habitasse ac natoque ad nisl dolor dui in."
+								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis cursus quam..."
 								profileImage="https://placehold.co/100.png"
                                 socialLinks={[
                                     {
@@ -88,7 +88,7 @@ export default function Home() {
 							<PCard
 								name="Jonathan Li"
 								subtitle="Applied Math • Computer Science at Berkeley"
-								description="Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris nullam dignissim at arcu enim risus gravida. Feugiat vulputate primis urna libero sem netus ridiculus. Inceptos nec aptent interdum dis sollicitudin vulputate curae iaculis. Etiam habitasse ac natoque ad nisl dolor dui in."
+								description="Sed in sem sit amet arcu semper faucibus nec eu sem. Sed sit amet eros vitae risus..."
 								profileImage="https://placehold.co/100.png"
                                 socialLinks={[
                                     {
