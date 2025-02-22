@@ -42,16 +42,11 @@ export function YellowHexagon() {
 export function GreenStar() {
 	const rotation = useScrollRotation();
 	return (
-		<div 
-            className="our-star absolute top-[70%] left-[-25%] -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw]"
-            style={{
-                transform: `rotate(${-rotation}deg)`,
-                WebkitTransform: `rotate(${-rotation}deg)`,
-                MozTransform: `rotate(${-rotation}deg)`,
-            }}
-        >
+		<div>
 			<svg
+				className="our-star absolute top-[70%] left-[-25%] -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw]"
 				viewBox="0 0 256 256"
+				style={{ transform: `rotate(${rotation * 0.5}deg)` }}
 			>
 				<polygon
 					points="
@@ -84,16 +79,11 @@ export function GreenStar() {
 export function BlueSquare() {
 	const rotation = useScrollRotation();
 	return (
-        <div
-            className="our-square absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
-            style={{
-                transform: `rotate(${-rotation}deg)`,
-                WebkitTransform: `rotate(${-rotation}deg)`,
-                MozTransform: `rotate(${-rotation}deg)`,
-            }}
-        >
+        <div>
             <svg
+                className="our-square absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
                 viewBox="0 0 256 256"
+                style={{ transform: `rotate(${rotation * 1.5}deg)` }}
             >
                 <rect x="0" y="0" width="256" height="256" fill="blue" />
             </svg>

@@ -7,7 +7,7 @@ export function useScrollRotation() {
 	useEffect(() => {
 		const handleScroll = () => {
 			const newLoc = window.scrollY;
-            const diff = (scrollLocRef.current - newLoc) * .25; // edit constant on this line to change rotation speed
+            const diff = scrollLocRef.current - newLoc;
             setRotation((prevRotation) => prevRotation + diff);
             scrollLocRef.current = newLoc;
 		};

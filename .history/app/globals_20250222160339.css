@@ -27,3 +27,17 @@ body {
 	height: 300px;
 	border-radius: 50%;
 }
+
+.our-circle {
+    background: url('../public/circle.svg');
+    position: absolute;
+    height: 35vw;
+    width: 35vw;
+}
+
+.gear{
+    background: url("http://i.imgur.com/zZ3fMuh.png");
+    width: 101px;
+    height: 102px;
+    position: fixed;
+}

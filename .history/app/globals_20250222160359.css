@@ -27,3 +27,7 @@ body {
 	height: 300px;
 	border-radius: 50%;
 }
+
+.our-circle {
+    background: url('../public/circle.svg');
+}

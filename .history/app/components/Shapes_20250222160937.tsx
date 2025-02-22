@@ -84,16 +84,11 @@ export function GreenStar() {
 export function BlueSquare() {
 	const rotation = useScrollRotation();
 	return (
-        <div
-            className="our-square absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
-            style={{
-                transform: `rotate(${-rotation}deg)`,
-                WebkitTransform: `rotate(${-rotation}deg)`,
-                MozTransform: `rotate(${-rotation}deg)`,
-            }}
-        >
+        <div>
             <svg
+                className="our-square absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
                 viewBox="0 0 256 256"
+                style={{ transform: `rotate(${rotation * 1.5}deg)` }}
             >
                 <rect x="0" y="0" width="256" height="256" fill="blue" />
             </svg>
