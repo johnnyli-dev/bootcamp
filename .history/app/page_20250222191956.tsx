@@ -145,7 +145,7 @@ export default function Home() {
 					</section>
 
 					{/* Section dedicated to why we are different */}
-					{/* <section className="py-16 flex flex-col items-center">
+					<section className="py-16 flex flex-col items-center">
 						<h2 className="text-3xl font-bold mb-4">
 							Frequently Asked{" "}
 							<span className="text-teal-500">Questions</span>
@@ -180,7 +180,7 @@ export default function Home() {
 								answer="everyone. unless ur dumb. jk. we love dumb ppl <3."
 							/>
 						</div>
-					</section> */}
+					</section>
 				</div>
 			</div>
 

@@ -32,7 +32,7 @@ export default function Home() {
 
 				{/* Centered Content */}
 				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-					<main className="flex flex-col items-center text-center gap-8">
+					<main className="flex flex-col items-center text-center gap-8 mt-auto">
 						<h1 className="text-5xl font-bold">
 							Understand Your Education
 						</h1>
@@ -145,7 +145,15 @@ export default function Home() {
 					</section>
 
 					{/* Section dedicated to why we are different */}
+
+					{/* FAQ Section */}
 					{/* <section className="py-16 flex flex-col items-center">
+                        <h2 className="text-3xl font-bold mb-8">
+                            FAQ
+                        </h2>
+                        <FaqDropdown />
+                    </section> */}
+					<section className="py-16 flex flex-col items-center">
 						<h2 className="text-3xl font-bold mb-4">
 							Frequently Asked{" "}
 							<span className="text-teal-500">Questions</span>
@@ -160,27 +168,31 @@ export default function Home() {
 
 						<div className="w-full max-w-2xl space-y-2">
 							<FaqDropdown
-								question="What is CodeCamp?"
-								answer="the best."
+								question="What is SmartNotes?"
+								answer="SmartNotes is a note-taking platform designed to help you capture, organize, and share ideas effortlessly."
 							/>
 							<FaqDropdown
-								question="How do I get started with CodeCamp?"
-								answer="just do it lol."
+								question="How do I get started with SmartNotes?"
+								answer="Getting started with SmartNotes is easy! Simply visit our website, sign up for a free trial, and start exploring the features."
 							/>
 							<FaqDropdown
-								question="What are the key features of CodeCamp?"
-								answer="ummm we are just better? lol."
+								question="What are the key features of SmartNotes?"
+								answer="SmartNotes offers real-time collaboration, advanced search, version history, and seamless integrations with popular productivity tools."
 							/>
 							<FaqDropdown
-								question="How much does CodeCamp cost?"
-								answer="how much do you got in ur wallet?"
+								question="How much does SmartNotes cost?"
+								answer="SmartNotes offers a free tier with core features. Premium plans are available for users who need additional storage, advanced security, or priority support."
 							/>
 							<FaqDropdown
-								question="Who is CodeCamp for?"
-								answer="everyone. unless ur dumb. jk. we love dumb ppl <3."
+								question="Who is SmartNotes for?"
+								answer="SmartNotes is perfect for students, professionals, and anyone who wants to keep track of their ideas and tasks in one place."
+							/>
+							<FaqDropdown
+								question="What is SmartNotes?"
+								answer="It's the same powerful note-taking solution described above, but you can use this extra entry to highlight any additional details or repeating info."
 							/>
 						</div>
-					</section> */}
+					</section>
 				</div>
 			</div>
 

@@ -43,7 +43,7 @@ export default function PCard({
 									href={link.url}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-blue-800 hover:text-blue-900"
+									className="text-blue-800 hover:text-gray-700"
 								>
 									{link.icon}
 								</a>
