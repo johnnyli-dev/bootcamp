@@ -151,7 +151,7 @@ export default function Home() {
 
 					{/* Section dedicated to why we are different */}
 					<section className="py-14 flex flex-col items-center">
-						<h2 className="text-3xl font-bold mb-4 text-center">
+						<h2 className="text-3xl font-bold mb-4 text-align center">
 							Frequently Asked{" "}
 							<span className="text-teal-500">Questions</span>
 						</h2>

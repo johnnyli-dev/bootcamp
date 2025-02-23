@@ -22,7 +22,7 @@ export function YellowHexagon() {
 	const rotation = useScrollRotation();
 	return (
 		<div
-			className="our-hexagon absolute top-[-18rem] right-[-20%] w-[40vw] h-[40vw]"
+			className="our-hexagon absolute top-[-10rem] right-[-20%] w-[40vw] h-[40vw]"
 			style={{
 				transform: `rotate(${-rotation}deg)`,
 				WebkitTransform: `rotate(${-rotation}deg)`,
@@ -85,7 +85,7 @@ export function BlueSquare() {
 	const rotation = useScrollRotation();
 	return (
         <div
-            className="our-square absolute top-[55rem] left-[80%] w-[35vw] h-[35vw]"
+            className="our-square absolute top-[50rem] left-[80%] w-[35vw] h-[35vw]"
             style={{
                 transform: `rotate(${-rotation}deg)`,
                 WebkitTransform: `rotate(${-rotation}deg)`,
