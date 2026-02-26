@@ -5,7 +5,7 @@ export function RedCircle() {
 	const rotation = useScrollRotation(true, 0.75); // 0.75 is the rotation speed for the red circle; diff from others
 	return (
 		<svg
-			className="our-circle absolute left-[-15%] top-[-10rem] w-[35vw] h-[35vw]"
+			className="our-circle absolute left-[-15%] w-[35vw] h-[35vw]"
 			viewBox="0 0 256 256"
 			style={{
 				transform: `rotate(${rotation}deg)`,
@@ -22,7 +22,7 @@ export function YellowHexagon() {
 	const rotation = useScrollRotation();
 	return (
 		<div
-			className="our-hexagon absolute top-[-18rem] right-[-20%] w-[40vw] h-[40vw]"
+			className="our-hexagon absolute top-[-20%] right-[-20%] translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw]"
 			style={{
 				transform: `rotate(${-rotation}deg)`,
 				WebkitTransform: `rotate(${-rotation}deg)`,
@@ -43,7 +43,7 @@ export function GreenStar() {
 	const rotation = useScrollRotation();
 	return (
 		<div 
-            className="our-star absolute top-[50rem] left-[-25%] w-[50vw] h-[50vw]"
+            className="our-star absolute top-[70%] left-[-25%] -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw]"
             style={{
                 transform: `rotate(${-rotation}deg)`,
                 WebkitTransform: `rotate(${-rotation}deg)`,
@@ -85,7 +85,7 @@ export function BlueSquare() {
 	const rotation = useScrollRotation();
 	return (
         <div
-            className="our-square absolute top-[55rem] left-[80%] w-[35vw] h-[35vw]"
+            className="our-square absolute top-[75%] left-[80%] -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw]"
             style={{
                 transform: `rotate(${-rotation}deg)`,
                 WebkitTransform: `rotate(${-rotation}deg)`,

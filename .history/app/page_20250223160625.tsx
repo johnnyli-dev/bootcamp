@@ -18,23 +18,18 @@ import {
 export default function Home() {
 	return (
 		<div className="min-h-screen bg-white relative overflow-hidden">
-
-            {/* Fixed Shapes Container */}
-            <div className="relative mt-[5rem] mx-auto">
-                <div className="absolute inset-0 pointer-events-none">
-                    <RedCircle />
-                    <YellowHexagon />
-                    <GreenStar />
-                    <BlueSquare />
-                </div>
-            </div>
-            
 			{/* Hero Section */}
 			<div className="relative min-h-screen flex items-center justify-center mt-[5rem] mx-auto">
-                
-                {/* Navbar */}
+				{/* SVG Shapes positioned relative to hero section */}
+				<div className="absolute inset-0">
+					<RedCircle />
+					<YellowHexagon />
+					<GreenStar />
+					<BlueSquare />
+				</div>
+
 				<Navbar />
-                
+
 				{/* Centered Content */}
 				<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
 					<main className="flex flex-col items-center text-center gap-8 py-14">
@@ -48,7 +43,7 @@ export default function Home() {
 							step-by-step instruction and collaborative learning.
 						</p>
 
-						{/* CTA (Call-To-Action) Buttons */}
+						{/* CTA Buttons */}
 						<div className="flex gap-7 whitespace-nowrap">
 							<a
 								href="#learn-more"
@@ -151,7 +146,7 @@ export default function Home() {
 
 					{/* Section dedicated to why we are different */}
 					<section className="py-14 flex flex-col items-center">
-						<h2 className="text-3xl font-bold mb-4 text-center">
+						<h2 className="text-3xl font-bold mb-4">
 							Frequently Asked{" "}
 							<span className="text-teal-500">Questions</span>
 						</h2>

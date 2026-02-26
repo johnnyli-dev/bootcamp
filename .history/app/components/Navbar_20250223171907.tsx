@@ -10,7 +10,7 @@ export default function Navbar() {
 						<div className="flex-shrink-0 px-2">
 							<Link href="/" className="flex items-center gap-2">
 								<Image
-									src="/logo.svg"
+									src="../public/logo.svg"
 									alt="CodeCamp Logo"
 									width={48}
 									height={48}
