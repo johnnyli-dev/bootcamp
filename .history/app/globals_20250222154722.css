@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #ffffff;
+		--foreground: #171717;
+	}
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+}
+
+.geometric-shape {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+.our-circle {
+    background: "./images/circle.svg";
+    position: absolute;
+}
+
+.gear{
+    background: url("http://i.imgur.com/zZ3fMuh.png");
+    width: 101px;
+    height: 102px;
+    position: fixed;
+}
